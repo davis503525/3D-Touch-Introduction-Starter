@@ -14,11 +14,15 @@ class MasterViewController: UITableViewController {
     var objects = [AnyObject]()
 
     @IBOutlet weak var peek: UIButton!
+    var forceButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        
+        self.forceButton = self.peek
+        self.forceButton.setTitle("Force", forState: .Normal)
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
