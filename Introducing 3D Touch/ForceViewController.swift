@@ -17,6 +17,7 @@ class ForceViewController: UIViewController {
 
         self.forceOutput.numberOfLines = 0
         self.forceOutput.text = "Force\nOutput"
+        self.forceOutput.textAlignment = .Center
     }
 
     override func didReceiveMemoryWarning() {
