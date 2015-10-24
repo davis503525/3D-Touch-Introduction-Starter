@@ -15,7 +15,8 @@ class ForceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.forceOutput.numberOfLines = 0
+        self.forceOutput.text = "Force\nOutput"
     }
 
     override func didReceiveMemoryWarning() {
