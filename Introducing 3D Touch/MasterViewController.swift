@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
 
+    @IBOutlet weak var peek: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
